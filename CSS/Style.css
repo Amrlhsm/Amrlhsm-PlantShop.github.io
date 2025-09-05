@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Kanit", serif;
+    font-style: normal;
+}
+
+body {
+    background-color: #F3F3F3;
+    color: white;
+    /* min-height: 5000px; */
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.navbar h1 {
+    color: #2F4937;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.navbar .Navbar-menu a {
+    color: #2F4937;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0 5px;
+    display: inline-block;
+}
+.navbar .Navbar-menu a::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #2F4937;
+    transform: scaleX(0);
+}
+.navbar .Navbar-menu a:hover::after {
+    transform: scaleX(0.8);
+    transition: 0.2s linear;
+}
+.Navbar-more img {
+    width: 40px;
+}
+
+
+/* Section */
+.Section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/Background/Background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Section .main h1 {
+    color: #2F4937;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px #1f1f1f;
+}
+.Section .main p {
+    color: black;
+    font-size: 20px;
+    margin-top: 3px;
+}
+.Section .main {
+    padding: 10px 5%;
+    max-width: 900px;
+}
+.Section .main a {
+    display: inline-block;
+    margin-top: 8px;
+    color: white;
+    padding: 15px 20px;
+    background-color: #2F4937;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #1f1f1f;
+}
+.Section .main a:hover {
+    background-color: #1f1f1f;
+}
+
+/* About */
+.about {
+    padding: 60px 5% 30px;
+    height: 800px;
+
+}
+.about h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #2F4937;
+    margin-bottom: 30px;
+}
+.about .about-row {
+    display: flex;
+    gap: 20px;
+}
+.about .about-row .about-img {
+    flex: 1 1 50%;
+}
+.about .about-row .about-img img {
+    width: 100%;
+}
+.about .about-txt {
+    flex: 1 1 60%;
+}
+.about .about-txt h3 {
+    color: #1A2A05;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.about .about-txt p {
+    color: #666;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 15px;
+
+}
+
+/* About menu */
+.menu-pesan {
+    margin: 0 auto;
+    padding: 200px;
+    padding-top: 50px;
+    background-color: white;
+}
+
+.menu-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header {
+    max-width: 50%;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #2F4937;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.header button {
+    background-color: #2F4937;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.header button:hover {
+    background-color: white;
+    border: 2px solid #1A2A05;
+    color: #1A2A05;
+}
+
+.Plants-image {
+    max-width: 45%;
+    text-align: center;
+}
+
+.Plants-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.feature {
+    text-align: center;
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Footer */
+.Footer {
+    background-image: url(../img/Background/background2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.Footer h1 {
+    text-align: center;
+    font-style: italic;
+    padding-top: 75px;
+    font-size: 60px;
+}
+.Footer .Input {
+    margin: auto;
+    width: 500px;
+}
+.Footer input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 20px;    
+}
+
+/* Contact */
+.contact {
+    padding: 60px 5% 10px;
+    width: 100%;
+    height: 180px;
+    background-color: #F3F3F3;
+}
+.contact .contact-us {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contact .contact-us .social img {
+    width: 50px;
+}
+.contact .contact-us .social a {
+    font-size: 20px;
+    color: #1A2A05;
+}
+.contact h3 {
+    text-align: center;
+    color: #2F4937;
+    margin-top: 10px;
+}
+
+.menu-content {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+}
+.menu-content h1 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.grid .item img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.grid-more {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.grid-more .item img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.menu-content a {
+    background: white;
+    display: block;
+    color: #1A2A05;
+    border: 2px solid #1A2A05;
+    border-radius: 50px;
+    padding: 15px;
+    width: 200px;
+    margin: 25px auto;
+}
+.menu-content a:hover {
+    border: 2px solid white;
+    background-color: #1A2A05;
+    color: white;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.item h2 {
+    color: #1A2A05;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.item p {
+    color: #4caf50;
+    font-size: 16px;
+    font-weight: bold;
+}
